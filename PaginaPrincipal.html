@@ -1,286 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="PaginaPrincipal.css">
+<meta charset="UTF-8">
+<title>Tienda Tecnológica</title>
+<link rel="stylesheet" href="PaginaPrincipal.css">
 </head>
+
 <body>
-    
-    <section id="inicio" class="pagina">
-        <h1>Tienda Tecnologica</h1>
-        <h2>Categorías:</h2>
 
-        <div class="menu-categorias">
+<section id="inicio" class="pagina">
 
+	<h1>Tienda Tecnologica</h1>
+	<h2>Categorías:</h2>
 
-            <!-- Laptops -->
-            <a href="#laptops" class="categoria">
-            <img src="https://sigmatiendas.com/cdn/shop/articles/laptops_variadas_portada_blog.webp?v=1728322812&width=2048" alt="Laptops">
-        <span>Laptops</span>
-    </a>
+    <h2>Filtrar:</h2>
 
+        <input type="radio" name="filtro" id="todos" checked hidden>
+        <input type="radio" name="filtro" id="pc" hidden>
+        <input type="radio" name="filtro" id="perifericos" hidden>
+        <input type="radio" name="filtro" id="componentes" hidden>
 
-    <!-- Monitores -->
-    <a href="#monitores" class="categoria">
-            <img src="https://www.paraguayti.com/wp-content/uploads/2023/01/CES-Monitor-Lineup_PR_dl1_2023-Monitor-Full-lineups.jpg" alt="Monitores">
-            <span>Monitores</span>
-    </a>
+    <div class="filtros">
 
+	    <label for="todos">Todos</label>
+	    <label for="pc">Computadoras</label>
+	    <label for="perifericos">Periféricos</label>
+	    <label for="componentes">Componentes</label>
 
-    <!-- Teclados -->
-        <a href="#teclados" class="categoria">
-            <img src="https://www.teraguate.com/web/image/138731-3783e613/teclados-gaming-tera.jpg?access_token=dd5cdb20-e31b-4396-872b-6e67999b76da" alt="Monitores">
-            <span>Teclados</span>
-        </a>
+    </div>
 
+		<div class="menu-categorias">
 
-        <!-- Mouses -->
-        <a href="#mouses" class="categoria">
-            <img src="https://www.stuff.tv/wp-content/uploads/sites/2/2019/10/Stuff-Best-Wireless-Mice-Lead.png?quality=75&w=1080" alt="Monitores">
-            <span>Mouses</span>
-        </a>
+	<a href="#laptops" class="categoria pc">
+		<img src="https://sigmatiendas.com/cdn/shop/articles/laptops_variadas_portada_blog.webp?v=1728322812&width=2048">
+		<span>Laptops</span>
+	</a>
 
+	<a href="#monitores" class="categoria perifericos">
+		<img src="https://www.paraguayti.com/wp-content/uploads/2023/01/CES-Monitor-Lineup_PR_dl1_2023-Monitor-Full-lineups.jpg">
+		<span>Monitores</span>
+	</a>
 
-        <!-- Auriculares -->
-        <a href="#auriculares" class="categoria">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_724716-MLA70605455004_072023-B.webp" alt="Monitores">
-            <span>Auriculares</span>
-        </a>
+	<a href="#teclados" class="categoria perifericos">
+		<img src="https://ordenadores-y-portatiles.com/wp-content/uploads/2020/10/teclado.jpg">
+		<span>Teclados</span>
+	</a>
 
-        
-        <!-- Computadoras de Escritorio -->
-        <a href="#computadorasEscritorio" class="categoria">
-            <img src="https://www.teraguate.com/web/image/139753-440e1bae/case-gaming44.jpg?access_token=bdda6db4-af7d-4dcf-a62a-3c74ac737dee" alt="Monitores">
-            <span>Computadoras de Escritorio</span>
-        </a>    
+	<a href="#mouses" class="categoria perifericos">
+		<img src="https://www.stuff.tv/wp-content/uploads/sites/2/2019/10/Stuff-Best-Wireless-Mice-Lead.png">
+		<span>Mouses</span>
+	</a>
 
+	<a href="#auriculares" class="categoria perifericos">
+		<img src="https://http2.mlstatic.com/D_NQ_NP_724716-MLA70605455004_072023-B.webp">
+		<span>Auriculares</span>
+	</a>
 
-        <!-- Almacenamiento Interno -->
-        <a href="#almacenamiento" class="categoria">
-            <img src="https://mx-media.hptiendaenlinea.com/magefan_blog/disco_duro.jpg" alt="Monitores">
-            <span>Almacenamiento Interno</span>
-        </a>
+	<a href="#computadorasEscritorio" class="categoria pc">
+		<img src="https://nzxt.com/cdn/shop/collections/1_Cases_Title.png?v=1748846317&width=2048">
+		<span>Computadoras Escritorio</span>
+	</a>
 
+	<a href="#almacenamiento" class="categoria componentes">
+		<img src="https://mx-media.hptiendaenlinea.com/magefan_blog/disco_duro.jpg">
+		<span>Almacenamiento</span>
+	</a>
 
-        <!-- Memoria Ram -->
-        <a href="#rams" class="categoria">
-            <img src="https://www.teraguate.com/web/image/139691-2b507072/memoria-ram.jpg?access_token=ffc545f4-ae92-40a8-8f97-a3b80237e07d" alt="Monitores">
-            <span>Memoria RAM</span>
-        </a>
+	<a href="#rams" class="categoria componentes">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41g0iHXEgCv0W3o6U8sBCwoQNvTkj9cuOOw&s">
+		<span>Memoria RAM</span>
+	</a>
 
+	<a href="#procesadores" class="categoria componentes">
+		<img src="https://electronicaonline.net/wp-content/uploads/2024/11/Lista-de-procesadores.webp">
+		<span>Procesadores</span>
+	</a>
 
-        <!-- Procesadores(CPU) -->
-        <a href="#procesadores" class="categoria">
-            <img src="https://electronicaonline.net/wp-content/uploads/2024/11/Lista-de-procesadores.webp" alt="Monitores">
-            <span>Procesadores (CPU)</span>
-        </a>
+	<a href="#tarjetasmadre" class="categoria componentes">
+		<img src="https://img.pacifiko.com/PROD/resize/1/250x250/ODUxNTU3YT.jpg">
+		<span>Tarjetas Madre</span>
+	</a>
 
-        
-        <!--  -->
-        <a href="#tarjetasmadre" class="categoria">
-            <img src="https://www.teraguate.com/web/image/139748-26a65d6c/motherboard.jpg?access_token=d36521aa-57b3-41c2-95c5-6a526dc22db1" alt="Monitores">
-            <span>Tarjetas Madre (Motherboards)</span>
-        </a>
+</div>
 
+</section>
 
-        </div>
-
-    </section>
 
 
      <!-- Laptops -->
-    <section id="laptops" class="pagina">
-        <h1>Laptops</h1>
+<section id="laptops" class="pagina">
+    <h1>Laptops</h1>
 
-        <div class="contenedor">
-            <a href="#asusrogstrix" class="card">
-                <img src="https://intech.com.gt/sU/files/articulos/1727929244.png">
-                <h3>Laptop Asus Rog Strix G614JIR-N3117 i9 14900HX + 16GB + 1TB SSD + RTX 4070 8GB + 165hz 15.6 pulgadas</h3>
-                <p>Precio: Q17,999</p>
-            </a>
+    <input type="text" id="buscarLaptop" class="buscador" placeholder="Buscar laptop...">
 
-             <a href="#laptopHP" class="card">
-                <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_163.png">
-                <h3>Laptop HP Notebook,15.6 Pulgadas FHD, Intel Core I5-1334U, 8GB RAM, 512GB SSD, Win11 Home, Color Plata, Teclado En Inglés</h3>
-                <p>Precio: Q5,199</p>
-            </a>
+    <div class="contenedor" id="listaLaptops">
+        <a href="#asusrogstrix" class="card">
+            <img src="https://intech.com.gt/sU/files/articulos/1727929244.png">
+            <h3>Asus Rog Strix G614JIR</h3>
+            <p>Precio: Q17,999</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-             <a href="#dellinspiron" class="card">
-                <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_222.png">
-                <h3>Laptop Dell Inspiron 15 3535, 15.6 Pulgadas FHD 120Hz, Ryzen 5 7520U, 8GB RAM, 512GB SSD, W11H, Color Negro, Teclado En Inglés</h3>
-                <p>Precio: Q4,299</p>
-            </a>
+        <a href="#laptopHP" class="card">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_163.png">
+            <h3>HP Notebook 15.6 FHD</h3>
+            <p>Precio: Q5,199</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-             <a href="#macbook" class="card">
-                <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_415.jpg">
-                <h3>Apple MacBook Air M4 De 13 Pulgadas, 8GPU/10CPU, 16GB RAM, 256GB, Almacenamiento, Color Sky Blue</h3>
-                <p>Precio: Q9,999</p>
-            </a>
+        <a href="#dellinspiron" class="card">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_222.png">
+            <h3>Dell Inspiron 15 3535</h3>
+            <p>Precio: Q4,299</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#zenbook" class="card">
-                <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj.jpg">
-                <h3>ASUS Zenbook Duo Dual 14 OLED WUXGA Notebook Intel Core Ultra 7 155H 16GB RAM 1TB SSD Intel Arc Graphics Inkwell Gray</h3>
-                <p>Precio: Q23,125</p>
-            </a>
+        <a href="#macbook" class="card">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_415.jpg">
+            <h3>MacBook Air M4</h3>
+            <p>Precio: Q9,999</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#legioni5" class="card">
-                <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-1.-700x700.jpg">
-                <h3>Notebook Legion 5 16IRX9 Marca Lenovo Procesador Intel Core i9 Version 14900H De 2.20 Ghz 32GB De Memoria RAM 1TB De Almacenamiento En SSD Tarjeta De Video RTX 4060 De 8GB Pantallas De 16"</h3>
-                <p>Precio: Q16,118</p>
-            </a>
+        <a href="#zenbook" class="card">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj.jpg">
+            <h3>ASUS Zenbook Duo OLED</h3>
+            <p>Precio: Q23,125</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#omnibook" class="card">
-                <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/B0G3H7ZS84.jpg">
-                <h3>HP, OmniBook X Flip 2 en 1, Ultra 5,16GB RAM, SSD de 512GB, W11 Home, 14″, US-198990145426</h3>
-                <p>Precio: Q7,264</p>
-            </a>
+        <a href="#legioni5" class="card">
+            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-1.-700x700.jpg">
+            <h3>Lenovo Legion 5</h3>
+            <p>Precio: Q16,118</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#nitro" class="card">
-                <img src="https://cdn.kemik.gt/2024/04/71F-Wcriq4L._AC_SL1500_.-696x500.jpg">
-                <h3>Acer Nitro V Laptop para juegos | Procesador Intel Core i5-13420H | GPU NVIDIA GeForce RTX 4050 para portátil | Pantalla FHD IPS de 15.6 pulgadas de 144 Hz | DDR5 de 8 GB | SSD de 512 GB Gen 4 | WiFi i5-13420H / RTX 4050</h3>
-                <p>Precio: Q11,203</p>
-            </a>
-        </div>
+        <a href="#omnibook" class="card">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/B0G3H7ZS84.jpg">
+            <h3>HP OmniBook X Flip</h3>
+            <p>Precio: Q7,264</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-        <a href="#inicio" class="volver">Regresar</a>
-    </section>
+        <a href="#nitro" class="card">
+            <img src="https://cdn.kemik.gt/2024/04/71F-Wcriq4L._AC_SL1500_.-696x500.jpg">
+            <h3>Acer Nitro V</h3>
+            <p>Precio: Q11,203</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
+    </div>
+
+    <a href="#inicio" class="volver">Regresar</a>
+</section>
 
 
 
-    <section id="asusrogstrix" class="pagina">
+<!-- DETALLES -->
+
+<section id="asusrogstrix" class="pagina">
+    <h1>Asus Rog Strix G614JIR</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop Asus Rog Strix G614JIR-N3117</h2>
-            <h3>Especificaciones</h3>
             <p>Procesador: Intel Core i9 14900HX</p>
-            <p>Almacenamiento: 1TB SSD</p>
-            <p>Memoria RAM: 16GB DDR5</p>
-            <p>Pantalla: 1920x1080 a 165hz de 15.6 pulgadas</p>
-            
+            <p>RAM: 16GB DDR5</p>
+            <p>SSD: 1TB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://intech.com.gt/sU/files/articulos/1727929244.png" alt="">
-            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-02.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-03.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-04.-700x700.jpg" alt="">
+            <img src="https://intech.com.gt/sU/files/articulos/1727929244.png">
+            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-02.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/02/G614JV-AS73-ASUS-1200x1200-04.-700x700.jpg">
         </div>
     </div>
 
     <a href="#laptops" class="volver">Regresar</a>
 </section>
-
 
 <section id="laptopHP" class="pagina">
+    <h1>HP Notebook 15.6 FHD</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop HP Notebook,15.6 Pulgadas FHD</h2>
-            <h3>Especificaciones</h3>
-            <p>Procesador: Intel Core I5-1334U</p>
-            <p>Almacenamiento: 512GB SSD</p>
-            <p>Memoria RAM: 8GB RAM DDR4</p>
-            <p>Pantalla: 1920x1080 de 15.6 Pulgadas</p>
-            
+            <p>Procesador: Intel Core i5</p>
+            <p>RAM: 8GB</p>
+            <p>SSD: 512GB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_163.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_2.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_4.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_5.png" alt="">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_163.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_2.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_4.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NTZjZGM0Nz_5.png">
         </div>
     </div>
 
     <a href="#laptops" class="volver">Regresar</a>
 </section>
+
+
 
 <section id="dellinspiron" class="pagina">
+    <h1>Dell Inspiron 15 3535</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop Dell Inspiron 15 3535</h2>
-            <h3>Especificaciones</h3>
             <p>Procesador: Ryzen 5 7520U</p>
-            <p>Almacenamiento: 512GB SSD</p>
-            <p>Memoria RAM: 8 GB DDR4</p>
-            <p>Pantalla: 1920x1080 a 120hz de 15.6" IPS</p>
-            
+            <p>RAM: 8GB</p>
+            <p>SSD: 512GB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_222.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_2.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_4.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_5.png" alt="">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_222.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_2.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_4.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDZjMWYwYT_5.png">
         </div>
     </div>
 
     <a href="#laptops" class="volver">Regresar</a>
 </section>
+
 
 <section id="macbook" class="pagina">
+    <h1>MacBook Air M4</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Apple MacBook Air M4</h2>
-            <h3>Especificaciones</h3>
             <p>Procesador: Apple M4</p>
-            <p>Almacenamiento: 256GB SSD</p>
-            <p>Memoria RAM: 16GB </p>
-            <p>Pantalla: 2560 x 1664 de 13 pulgadas</p>
-            
+            <p>RAM: 16GB</p>
+            <p>SSD: 256GB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_415.jpg" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_2.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_4.png" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_5.png" alt="">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_415.jpg">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_2.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_4.png">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MTFiZDhhMW_5.png">
         </div>
     </div>
 
     <a href="#laptops" class="volver">Regresar</a>
 </section>
 
-<section id="zenbook" class="pagina">
+
+<<section id="zenbook" class="pagina">
+    <h1>ASUS Zenbook Duo OLED</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop ASUS Zenbook Duo Dual</h2>
-            <h3>Especificaciones</h3>
             <p>Procesador: Intel Core Ultra 7</p>
-            <p>Almacenamiento: 1TB SSD</p>
-            <p>Memoria RAM: 16GB LPDDR5X</p>
-            <p>Pantalla: 2880 x 1800 2 pantallas de 14" cada una</p>
-            
+            <p>RAM: 16GB</p>
+            <p>SSD: 1TB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj.jpg" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_1.jpg" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_2.jpg" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_3.jpg" alt="">
-        </div>
-    </div>
-
-    <a href="#laptops" class="volver">Regresar</a>
-</section>
-
-<section id="omnibook" class="pagina">
-    <div class="detalle">
-        <div class="info">
-            <h2>OmniBook X Flip 2 en 1</h2>
-            <h3>Especificaciones</h3>
-            <p>Procesador: Intel Core Ultra 5</p>
-            <p>Almacenamiento: 512GB SSD</p>
-            <p>Memoria RAM: 16GB LPDDR5</p>
-            <p>Pantalla: 1920x1200 de 14 pulgadas</p>
-            
-        </div>
-
-        <div class="imagenes">
-            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-9.webp" alt="">
-            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-11.webp" alt="">
-            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-8.webp" alt="">
-            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-4.webp" alt="">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj.jpg">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_1.jpg">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_2.jpg">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjY1MGFmNj_3.jpg">
         </div>
     </div>
 
@@ -288,22 +268,42 @@
 </section>
 
 <section id="legioni5" class="pagina">
+    <h1>Lenovo Legion 5</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop Lenovo Legion 5 16IRX9</h2>
-            <h3>Especificaciones</h3>
-            <p>Procesador: Intel Core i7-14650HX</p>
-            <p>Almacenamiento: 512GB SSD</p>
-            <p>Memoria RAM: 16GB DDR5</p>
-            <p>Pantalla: 2560 x 1600 de 16 pulgadas</p>
-            
+            <p>Procesador: Intel Core i9</p>
+            <p>RAM: 32GB</p>
+            <p>SSD: 1TB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-1.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-2.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-5.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-6.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-1.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-2.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-5.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/10/83DG004NUS-Lenovo-1200x1200-6.-700x700.jpg">
+        </div>
+    </div>
+
+    <a href="#laptops" class="volver">Regresar</a>
+</section>
+
+
+<section id="omnibook" class="pagina">
+    <h1>HP OmniBook X Flip</h1>
+
+    <div class="detalle">
+        <div class="info">
+            <p>Procesador: Intel Core Ultra 5</p>
+            <p>RAM: 16GB</p>
+            <p>SSD: 512GB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </div>
+        <div class="imagenes">
+            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-9.webp">
+            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-11.webp">
+            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-8.webp">
+            <img src="https://www.macrosistemas.com/wp-content/uploads/5426-4.webp">
         </div>
     </div>
 
@@ -311,22 +311,20 @@
 </section>
 
 <section id="nitro" class="pagina">
+    <h1>Acer Nitro V</h1>
+
     <div class="detalle">
         <div class="info">
-            <h2>Laptop Acer Nitro V</h2>
-            <h3>Especificaciones</h3>
-            <p>Procesador: Intel Core i5-13420H</p>
-            <p>Almacenamiento: 512GB SSD</p>
-            <p>Memoria RAM: 8GB DDR5</p>
-            <p>Pantalla: 1920x1080 a 144hz de 15.6 pulgadas</p>
-            
+            <p>Procesador: Intel Core i5</p>
+            <p>RAM: 8GB</p>
+            <p>SSD: 512GB</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2024/04/71F-Wcriq4L._AC_SL1500_.-696x500.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/04/61lnTrJD9lL._AC_SL1500_.-807x500.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/04/71YcQTvQ4bL._AC_SL1500_.-793x500.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/04/61cWY5nxKhL._AC_SL1500_.-861x500.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2024/04/71F-Wcriq4L._AC_SL1500_.-696x500.jpg">
+            <img src="https://cdn.kemik.gt/2024/04/61lnTrJD9lL._AC_SL1500_.-807x500.jpg">
+            <img src="https://cdn.kemik.gt/2024/04/71YcQTvQ4bL._AC_SL1500_.-793x500.jpg">
+            <img src="https://cdn.kemik.gt/2024/04/61cWY5nxKhL._AC_SL1500_.-861x500.jpg">
         </div>
     </div>
 
@@ -335,245 +333,229 @@
 
 
 <!-- Monitores -->
-    <section id="monitores" class="pagina">
-        <h1>Monitores</h1>
+<section id="monitores" class="pagina">
+    <h1>Monitores</h1>
 
-        <div class="contenedor">
+    <div class="contenedor">
 
-            <a href="#monitorAOC" class="card">
-                <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258415730_preview..webp&w=640&q=75">
-                <h3>Monitor LED Gaming De 22" Marca AOC Modelo 22B35HM23 Resolucion Full HD 1920 x 1080 Frecuencia De Actualizacion De 120Hz Conexion HDMI</h3>
-                <p>Precio: Q800</p>
-            </a>
+        <a href="#monitorAOC" class="card">
+            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258415730_preview..webp&w=640&q=75">
+            <h3>Monitor AOC 22B35HM23 22"</h3>
+            <p>Precio: Q800</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#monitorxiaomicurvo" class="card">
-                <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-01.-700x700.jpg">
-                <h3>G34WQi Monitor Gaming Curvo de 34" WQHD, HDMI y DP a 180Hz</h3>
-                <p>Precio: Q2,749</p>
-            </a>
+        <a href="#monitorxiaomicurvo" class="card">
+            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-01.-700x700.jpg">
+            <h3>Xiaomi G34WQi Curvo 34"</h3>
+            <p>Precio: Q2,749</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-             <a href="#monitorgigabyte" class="card">
-                <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-01.-700x700.jpg">
-                <h3>Monitor Gaming Gigabyte GS25F2 de 25" Full HD IPS, HDMI y DisplayPort a 200Hz</h3>
-                <p>Precio: Q1,234</p>
-            </a>
+        <a href="#monitorgigabyte" class="card">
+            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-01.-700x700.jpg">
+            <h3>Gigabyte GS25F2 25"</h3>
+            <p>Precio: Q1,234</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-             <a href="#monitorsamsung" class="card">
-                <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-01.-700x700.jpg">
-                <h3>Essential S3 Monitor Curvo de 27" Full HD, HDMI y VGA a 100Hz</h3>
-                <p>Precio: Q1,711</p>
-            </a>
+        <a href="#monitorsamsung" class="card">
+            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-01.-700x700.jpg">
+            <h3>Samsung Essential S3 Curvo 27"</h3>
+            <p>Precio: Q1,711</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#monitorxiaomi" class="card">
-                <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-01.-700x700.jpg">
-                <h3>G27Qi Monitor Gaming 27" 2K, HDMI y DisplayPort a 180Hz - Negro</h3>
-                <p>Precio: Q1,826</p>
-            </a>
+        <a href="#monitorxiaomi" class="card">
+            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-01.-700x700.jpg">
+            <h3>Xiaomi G27Qi 27"</h3>
+            <p>Precio: Q1,826</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#monitormsi" class="card">
-                <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-1.-700x700.jpg">
-                <h3>MAG 274F Monitor Gaming de 27″ FHD IPS, HDMI y DisplayPort a 200Hz - Negro</h3>
-                <p>Precio: Q1,514</p>
-            </a>
+        <a href="#monitormsi" class="card">
+            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-1.-700x700.jpg">
+            <h3>MSI MAG 274F 27"</h3>
+            <p>Precio: Q1,514</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#monitorlenovo" class="card">
-                <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-01.-700x700.jpg">
-                <h3>Monitor Lenovo ThinkVision C27-40 FHD de 27" HDMI y VGA</h3>
-                <p>Precio: 1,458</p>
-            </a>
+        <a href="#monitorlenovo" class="card">
+            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-01.-700x700.jpg">
+            <h3>Lenovo ThinkVision C27-40</h3>
+            <p>Precio: Q1,458</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-            <a href="#monitoracer" class="card">
-                <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12001.-700x700.jpg">
-                <h3>Monitor Gaming Acer KA2 Series-KA272 G0 de 27" FHD, HDMI y VGA a 120Hz - Negro</h3>
-                <p>Precio: Q1,190</p>
-            </a>
+        <a href="#monitoracer" class="card">
+            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12001.-700x700.jpg">
+            <h3>Acer KA272 G0 27"</h3>
+            <p>Precio: Q1,190</p>
+            <label class="boton-carrito">Agregar al carrito</label>
+        </a>
 
-        </div>
+    </div>
 
-        <a href="#inicio" class="volver">Regresar</a>
-    </section>
+    <a href="#inicio" class="volver">Regresar</a>
+</section>
 
-    <section id="monitorAOC" class="pagina">
+    <!-- AOC -->
+<section id="monitorAOC" class="pagina">
+    <h1>Monitor AOC 22B35HM23 22"</h1>
     <div class="detalle">
         <div class="info">
-            <h2>Monitor LED Gaming De 22" Marca AOC Modelo 22B35HM23</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 21,5 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 120 Hz</p>
-            <p>Tiempo de respuesta: 1 ms (MPRT)</p>
-            
+            <p>Frecuencia: 120 Hz</p>
+            <p>Respuesta: 4 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258415730_preview..webp&w=640&q=75" alt="">
-            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258516830_preview..webp&w=640&q=75" alt="">
-            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251259024190_preview..webp&w=640&q=75" alt="">
-            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/B0DY99NW1N_3.jpg" alt="">
+            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258415730_preview..webp&w=640&q=75">
+            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251258516830_preview..webp&w=640&q=75">
+            <img src="https://www.intelaf.com/_next/image?url=https%3A%2F%2Fwww.intelaf.com%2F%2Fimages%2Fproductos%2Fimg_adicionales%2Fled-aoc-22b35hm%2Fled-aoc-22b35hm_1211251259024190_preview..webp&w=640&q=75">
+            <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/B0DY99NW1N_3.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitorxiaomicurvo" class="pagina">
+<!-- Xiaomi Curvo -->
+<section id="monitorxiaomicurvo" class="pagina">
+    <h1>Xiaomi G34WQi Curvo 34"</h1>
     <div class="detalle">
         <div class="info">
-            <h2>G34WQi Monitor Gaming Curvo de 34</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 34 pulgadas</p>
-            <p>Resolución: 3440 x 1440</p>
-            <p>Frecuencia de actualización: 180 Hz</p>
-            <p>Tiempo de respuesta: 1 ms (MPRT)</p>
-            
+            <p>Resolución: 3440 × 1440</p>
+            <p>Frecuencia: 180 Hz</p>
+            <p>Respuesta: 1 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-01.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-02.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-03.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-04.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-01.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-02.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/06/55058-XIAOMI-1200x1200-04.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitorgigabyte" class="pagina">
+<!-- Gigabyte -->
+<section id="monitorgigabyte" class="pagina">
+    <h1>Gigabyte GS25F2</h1>
     <div class="detalle">
         <div class="info">
-            <h2>Monitor Gaming Gigabyte GS25F2 de 25</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 24,5 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 200 Hz</p>
-            <p>Tiempo de respuesta: 1 ms (GTG)</p>
-            
+            <p>Frecuencia: 200 Hz</p>
+            <p>Respuesta: 1 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-01.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-02.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-04.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-03.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-01.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-02.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/12/GS25F2-GIGABYTE-1200x1200-04.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitorsamsung" class="pagina">
+<!-- Samsung -->
+<section id="monitorsamsung" class="pagina">
+    <h1>Samsung Essential S3</h1>
     <div class="detalle">
         <div class="info">
-            <h2>Essential S3 Monitor Curvo de 27</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 27 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 100 Hz</p>
-            <p>Tiempo de respuesta: 4 ms (GTG)</p>
-            
+            <p>Frecuencia: 100 Hz</p>
+            <p>Respuesta: 4 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-01.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-03.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-04.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/04/LS24D366GANXZA-SAMSUNG-1200x1200-06.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-01.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/04/LS27D366GANXZA-SAMSUNG-1200x1200-04.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/04/LS24D366GANXZA-SAMSUNG-1200x1200-06.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitorxiaomi" class="pagina">
+<!-- Xiaomi 27" -->
+<section id="monitorxiaomi" class="pagina">
+    <h1>Xiaomi G27Qi 27"</h1>
     <div class="detalle">
         <div class="info">
-            <h2>G27Qi Monitor Gaming 27</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 27 pulgadas</p>
-            <p>Resolución: 2560 x 1440</p>
-            <p>Frecuencia de actualización: 180 Hz</p>
-            <p>Tiempo de respuesta: 1 ms (MPRT)</p>
-            
+            <p>Resolución: 2560 × 1440</p>
+            <p>Frecuencia: 180 Hz</p>
+            <p>Respuesta: 1 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-02.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-03.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-04.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2024/06/G27i-XIAOMI-1200x1200-03.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-02.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/03/G27QI-XIAOMI-1200x1200-04.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2024/06/G27i-XIAOMI-1200x1200-03.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitormsi" class="pagina">
+<!-- MSI -->
+<section id="monitormsi" class="pagina">
+    <h1>MSI MAG 274F 27"</h1>
     <div class="detalle">
         <div class="info">
-            <h2>MAG 274F Monitor Gaming de 27</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 27 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 200 Hz</p>
-            <p>Tiempo de respuesta: 5 ms (GTG)</p>
-            
+            <p>Frecuencia: 200 Hz</p>
+            <p>Respuesta: 5 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-1.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-3.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-4.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-5.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-1.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-3.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-4.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2025/08/MAG274F-1200x1200-5.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitorlenovo" class="pagina">
+<!-- Lenovo -->
+<section id="monitorlenovo" class="pagina">
+    <h1>Lenovo ThinkVision C27-40</h1>
     <div class="detalle">
         <div class="info">
-            <h2>Monitor Lenovo ThinkVision C27-40</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 27 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 75 Hz</p>
-            <p>Tiempo de respuesta: 5 ms (MPRT)</p>
-            
+            <p>Frecuencia: 75 Hz</p>
+            <p>Respuesta: 5 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-01.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-03.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-04.-700x700.jpg" alt="">
-            <img src="https://psrefstuff.lenovo.com/syspool//Sys/Image/Lenovo_Monitors/Lenovo_C27_40_Monitor/Compressedimage/Lenovo_C27_40_CT2_03.png" alt="">
+            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-01.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-02.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-03.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2023/06/63DDKAR6LA-LENOVO-1200x1200-04.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
-    <section id="monitoracer" class="pagina">
+<!-- Acer -->
+<section id="monitoracer" class="pagina">
+    <h1>Acer KA272 G0 27"</h1>
     <div class="detalle">
         <div class="info">
-            <h2>Monitor Gaming Acer KA2 Series-KA272 G0 de 27</h2>
-            <h3>Especificaciones</h3>
-            <p>Pantalla: 27 pulgadas</p>
             <p>Resolución: 1920 × 1080</p>
-            <p>Frecuencia de actualización: 120 Hz</p>
-            <p>Tiempo de respuesta: 1 ms (VRB)</p>
-            
+            <p>Frecuencia: 120 Hz</p>
+            <p>Respuesta: 1 ms</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
-
         <div class="imagenes">
-            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12001.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12003.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12004.-700x700.jpg" alt="">
-            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12006.-700x700.jpg" alt="">
+            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12001.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12003.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12004.-700x700.jpg">
+            <img src="https://cdn.kemik.gt/2026/01/MT027ACR691200x12006.-700x700.jpg">
         </div>
     </div>
-
     <a href="#monitores" class="volver">Regresar</a>
 </section>
 
@@ -589,48 +571,56 @@
                 <img src="https://cdn.kemik.gt/2023/09/K607-MARVO-1200x1200-1-1-768x768.-700x700.jpg">
                 <h3>Teclado Gaming Membrana en Español 80% RGB TKL Negro</h3>
                 <p>Precio: Q155</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#tecladologitech" class="card">
                 <img src="https://cdn.kemik.gt/2024/01/920-012278-LOGITECH-1200x1200-01.-700x700.jpg">
                 <h3>Wave Keys Teclado Ergonómico Inalámbrico USB en Español Negro</h3>
                 <p>Precio: Q519</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#tecladoprimus" class="card">
                 <img src="https://cdn.kemik.gt/2025/11/ID011PGL211200x12001.-700x700.jpg">
                 <h3>BALLISTA82T Teclado Gaming Inalámbrico Bluetooth y 2,4GHz RGB - Edición Boba Fett Star Wars Español</h3>
                 <p>Precio: Q470</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#tecladorazer" class="card">
                 <img src="https://cdn.kemik.gt/2025/12/ID003RZR64-1200x1200-12.-700x700.jpg">
                 <h3>BlackWidow V4 Tenkeyless Hyperspeed Teclado Mecánico Gaming, Bluetooth + Wireless 1000 Hz, Hot-Swap, RGB - Español, Negro</h3>
                 <p>Precio: Q1,120</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#tecladoapple" class="card">
                 <img src="https://cdn.kemik.gt/2024/12/71rSweOTEJL.-700x700.jpg">
                 <h3>Magic Keyboard - Teclado Inalámbrico con Conectividad Bluetooth-Inglés de EE. UU. (US English)–Silver</h3>
                 <p>Precio: Q1,078</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#tecladoetouch" class="card">
                 <img src="https://cdn.kemik.gt/2021/05/KM-300-ETOUCH-1200x1200-1-1-768x768.jpg">
                 <h3>Teclado Alámbrico KB-300 USB Español</h3>
                 <p>Precio: Q34</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#tecladomarvo2" class="card">
                 <img src="https://cdn.kemik.gt/2023/09/KG953-MARVO-1200x1200-1-1-768x768.-700x700.jpg">
                 <h3>Teclado Gaming Mecánico TKL 75% Switch Azul en Español USB-C RGB Negro - KG953</h3>
                 <p>Precio: Q310</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#tecladomaxell" class="card">
                 <img src="https://cdn.kemik.gt/2024/08/WKB-20-MAXELL-1200x1200-01.-700x700.jpg">
                 <h3>Teclado Inalámbrico USB en Español Negro</h3>
                 <p>Precio: Q125</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -647,7 +637,7 @@
             <p>Teclas: 87</p>
             <p>Clasificación del interruptor: 10 millones de prensas</p>
             <p>Precio: Q155</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -670,7 +660,7 @@
             <p>Resolución: 3440 x 1440</p>
             <p>Frecuencia de actualización: 180 Hz</p>
             <p>Tiempo de respuesta: 1 ms (MPRT)</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -693,7 +683,7 @@
             <p>Tipo de baterías: 2x AAA (incluidas)</p>
             <p>Compatible con la aplicación Logi Options + en Windows y macOS</p>
             <p>Precio: Q519</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -716,7 +706,7 @@
             <p>Número de teclas estándar: 88</p>
             <p>Tipo y material de la batería: Batería de litio recargable</p>
             <p>Precio: Q470</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -739,7 +729,7 @@
             <p>Interruptores: Razer Orange Tactile Gen-3</p>
             <p>Retroiluminación: RGB personalizable</p>
             <p>Precio: Q1,120</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -762,7 +752,7 @@
             <p>Batería integrada</p>
             <p>Teclas multimedia</p>
             <p>Precio: 1,078</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -785,7 +775,7 @@
             <p>Idioma: Español</p>
             <p>Número de Teclas: 105 Teclas, incluye tecla para moneda Euro</p>
             <p>Precio: Q34</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -808,7 +798,7 @@
             <p>Cambiar clasificación: ≥50 millones de pulsaciones</p>
             <p>Iluminar desde el fondo: Retroiluminación arcoíris con 6 colores mixtos</p>
             <p>Precio: Q310</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -831,7 +821,7 @@
             <p>Número de teclas: 105</p>
             <p>Duración de las teclas: 8 millones de pulsaciones</p>
             <p>Precio: Q125</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -856,48 +846,56 @@
                 <img src="https://cdn.kemik.gt/2023/10/KMW-390-KLIP-XTREME-1200X1200-1-1-768x768.-700x700.jpg">
                 <h3>EverRest Mouse Inalámbrico USB 1600 DPI Negro</h3>
                 <p>Precio: Q152</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#mousextech" class="card">
                 <img src="https://cdn.kemik.gt/2023/08/XTM-310BK-XTECH-1200x1200-01.-700x700.jpg">
                 <h3>Galos Mouse Inalámbrico USB 1600 DPI Negro</h3>
                 <p>Precio: Q48</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#mousesmart" class="card">
                 <img src="https://cdn.kemik.gt/2023/03/CLA100-SMARTEC-MOUSE-1200X1200-1-1-768x768.-700x700.jpg">
                 <h3>Mouse Inalámbrico Recargable Click Silencioso 1600DPI - Negro</h3>
                 <p>Precio: Q94</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#mouselogitech" class="card">
                 <img src="https://cdn.kemik.gt/2023/12/910-006561-LOGITECH-1200X1200-2-1-768x768.-700x700.jpg">
                 <h3>Mouse Inalámbrico MX Master 3S Ergonómico Grafito</h3>
                 <p>Precio: Q1,117</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#mousemarvo" class="card">
                 <img src="https://cdn.kemik.gt/2024/02/M513-MARVO-1200x1200-1-1-768x768.-700x700.jpg">
                 <h3>M513 Mouse Gaming Alámbrico USB 6400 DPI Negro</h3>
                 <p>Precio: Q114</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#mousextech1" class="card">
                 <img src="https://cdn.kemik.gt/2023/06/XTM-720-XTECH-1200x1200-01.-700x700.jpg">
                 <h3>Combative Mouse Alámbrico USB 7200 DPI Negro</h3>
                 <p>Precio: Q107</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#mousehp" class="card">
                 <img src="https://cdn.kemik.gt/2023/12/4E407AA-HP-1200x1200-01.-700x700.jpg">
                 <h3>235 Mouse Inalámbrico USB 1600 DPI Negro</h3>
                 <p>Precio: Q145</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#mousemaxell" class="card">
                 <img src="https://cdn.kemik.gt/2024/02/348418-MAXELL-1200X1200-1-768x768.-700x700.png">
                 <h3>Mowr-105 Mouse Alámbrico USB 1000 DPI Rojo</h3>
                 <p>Precio: Q125</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -914,7 +912,7 @@
             <p>Resolución DPI: 800/1200/1600 dpi (ajustable)</p>
             <p>Clasificación del interruptor: 10 millones de prensas</p>
             <p>Precio: Q152</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -937,7 +935,7 @@
             <p>Tecnología : Sensor óptico</p>
             <p>Botones: Izquierdo/Derecho, rueda de desplazamiento y DPI</p>
             <p>Precio: Q48</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -960,7 +958,7 @@
             <p>Conectividad: USB-A</p>
             <p>Frecuencia de transmisión inalámbrica: 2,4 Ghz</p>
             <p>Precio: Q94</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -983,7 +981,7 @@
             <p>Valor nominal: 1.000 dpi</p>
             <p>DPI (valores mínimo y máximo): 200-8000 dpi (ajustable en incrementos de 50 dpi)</p>
             <p>Precio: Q1,117</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1006,7 +1004,7 @@
             <p>Conexión: cableado</p>
             <p>DPI: 800/1600/2400/3200/4000/4800/6400</p>
             <p>Precio: Q114</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1029,7 +1027,7 @@
             <p>Resolución (CPI): Configuración seleccionable con indicadores de luces LED. Azul: 1000dpi / Rosa: 2400dpi / Rojo: 3200dpi / Morado: 7200dpi</p>
             <p>Botones programables: Sí, mediante software</p>
             <p>Precio: Q107</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1052,7 +1050,7 @@
             <p>Tipo de batería: 1 x AA.</p>
             <p>Botones: 3 botones en tota</p>
             <p>Precio: Q145</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1075,7 +1073,7 @@
             <p>Resolución de 1200/1600 DPI </p>
             <p>Diseño curvo cómodo ergonómico </p>
             <p>Precio: Q40</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1099,48 +1097,56 @@
                 <img src="https://cdn.kemik.gt/2025/01/ARG-HS-2553BK-argom-1200x1200-00.-700x700.jpg">
                 <h3>Ultimate Sound Audífonos Bluetooth - Negro</h3>
                 <p>Precio: Q109</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#auricularesjbl770" class="card">
                 <img src="https://cdn.kemik.gt/2024/02/JBLT770NCWHTAM-JBL-1200x1200-01.-700x700.jpg">
                 <h3>Audífonos Bluetooth Tune 770NC Blanco</h3>
                 <p>Precio: Q999</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#auricularesxiaomi" class="card">
                 <img src="https://cdn.kemik.gt/2024/11/BHR8660GL-XIAOMI-BUDS-6-LITE-BLUE-1200X1200-1.-700x700.jpg">
                 <h3>Audífonos Inalámbricos TWS Xiaomi Redmi Buds 6 Lite | Cancelación de Ruido ANC | Micrófono IA para Llamadas Claras | Bluetooth 5.3 - Azul</h3>
                 <p>Precio: Q249</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#auricularesrealme" class="card">
                 <img src="https://cdn.kemik.gt/2025/06/6941764462229-1200x1200-1.-700x700.jpg">
                 <h3>Buds T200 Audífonos Bluetooth - Gris</h3>
                 <p>Precio: Q276</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#auricularesjbltune" class="card">
                 <img src="https://cdn.kemik.gt/2023/05/JBLTFLEXGBLKAM-JBL-1200X1200-01.-700x700.jpg">
                 <h3>Tune Flex Audífonos Bluetooth Ghost Edition Negro</h3>
                 <p>Precio: Q774</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#auricularesjblpantalla" class="card">
                 <img src="https://cdn.kemik.gt/2025/05/JBLTOURPRO3LTTAM-1200x1200-1.-700x700.jpg">
                 <h3>Tour Pro 3 Audífonos Bluetooth con Pantalla Táctil - Café</h3>
                 <p>Precio: Q1,961</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#airpods" class="card">
                 <img src="https://cdn.kemik.gt/2025/09/61solmQSSlL.-700x700.jpg">
                 <h3>Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Live Translation, Heart Rate Sensing, Hearing Aid Feature, Bluetooth Headphones, Spatial Audio, High-Fidelity Sound, USB-C Charging</h3>
                 <p>Precio: Q3,468</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#auricularesklip" class="card">
                 <img src="https://cdn.kemik.gt/2025/01/KWH-010BK-KLIP-XTREME-1200X1200-1.-700x700.jpg">
                 <h3>Audífonos Bluetooth ZoundTune - Negro</h3>
                 <p>Precio: Q142</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -1157,7 +1163,7 @@
             <p>Capacidad de batería: 400mAh</p>
             <p>Tiempo de música/habla: Hasta 40 horas</p>
             <p>Precio: Q109</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1181,7 +1187,7 @@
             <p>Sensibilidad: 100 dB SPL a 1 kHz</p>
             <p>Tiempo de carga: 2 horas</p>
             <p>Precio: Q999</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1204,7 +1210,7 @@
             <p>Conexión Inalámbrica: Bluetooth 5.3</p>
             <p>Protocolos Bluetooth: Bluetooth Low Energy / HFP / A2DP / AVRCP</p>
             <p>Precio: Q249</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1227,7 +1233,7 @@
             <p>Vocero (driver): 12,4 mm</p>
             <p>Códecs de audio compatibles: SBC / AAC / LDAC</p>
             <p>Precio: Q276</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1249,7 +1255,7 @@
             <p>Tiempo de reproducción con BT y cancelación adaptativa de ruido: hasta 6 h</p>
             <p>Respuesta de frecuencia: 20 Hz - 20 kHz</p>
             <p>Precio: Q774</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1271,7 +1277,7 @@
             <p>Perfiles Bluetooth compatibles: A2DP v1.4, AVRCP v1.6.2, HFP v1.8</p>
             <p>11 horas (sin ANC)</p>
             <p>Precio: Q1,961</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1293,7 +1299,7 @@
             <p>Traducción en Vivo</p>
             <p>8 horas de bateria </p>
             <p>Precio: Q3,468</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1315,7 +1321,7 @@
             <p>Sensibilidad: -42 dB ± 3 dB</p>
             <p>Capacidad: 500 mAh, batería de litio (NiCoMn) O2</p>
             <p>Precio: Q142</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1341,48 +1347,56 @@
                 <img src="https://cdn.kemik.gt/2025/10/PGR5VNS4W-03-NSX-1200x1200-01.-700x700.jpg">
                 <h3>Desktop NSX Ryzen 5 5500 16GB RAM + 500GB SSD + RTX 3050 6GB, Win11 Home - Negro</h3>
                 <p>Precio: Q5,247</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#computadoramsiryzen7" class="card">
                 <img src="https://cdn.kemik.gt/2025/10/PGR7VAS4W-01-NSX-1200x1200-01.-700x700.jpg">
                 <h3>Desktop NSX Ryzen 7 5700G 16GB RAM + 512GB SSD Win11 Home - Negro</h3>
                 <p>Precio: Q5,325</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#computadoransx" class="card">
                 <img src="https://cdn.kemik.gt/2025/05/R555008G500GRTX3050-NSX-1200x1200-01.-700x700.jpg">
                 <h3>Desktop NSX Ryzen 5 5500 16GB RAM + 512GB SSD + RTX 3050 6GB, Win11 Home - Negro</h3>
                 <p>Precio: Q6,457</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#computadorahp" class="card">
                 <img src="https://cdn.kemik.gt/2024/05/9L8V8LAABM-HP-1200x1200-01.-700x700.jpg">
                 <h3>Desktop HP ProDesk SFF G9 Core i7-13700 8GB RAM + 512GB SSD Win11 Pro en Español Negro</h3>
                 <p>Precio: Q8,901</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#computadoraai" class="card">
                 <img src="https://cdn.kemik.gt/2025/10/71d1nRsqtCL.-700x700.jpg">
                 <h3>AI Mini PC Core i7-13620H 32GB DDR5 RAM + 1TB SSD Windows 11 Pro, Wi-Fi 6 y BT 5.3, Blanco</h3>
                 <p>Precio: Q7,646</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#computadoradell" class="card">
                 <img src="https://cdn.kemik.gt/2025/11/RWKJK-DELL-1200x1200-01.-700x700.jpg">
                 <h3>Desktop DELL Pro QBS1250 Plus Core Ultra 7 265 16GB RAM DDR5 + 512GB SSD Win11 Pro - Slim PC</h3>
                 <p>Precio: Q10,850</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#computadoraomnistudio" class="card">
                 <img src="https://cdn.kemik.gt/2025/11/PC006HPR681200x12001.-700x700.jpg">
                 <h3>Desktop HP OmniStudio X All In One 27-cs0272la Core Ultra 7 155H 16GB RAM + 512GB SSD FHD Táctil, Win11 Home en Español Plateado</h3>
                 <p>Precio: Q15,224</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#computadoramachcreator" class="card">
                 <img src="https://cdn.kemik.gt/2025/10/71G0nB2W7YL.-700x700.jpg">
                 <h3>Machcreator Mini Desktop Core i7-13620H 16GB RAM + 1TB SSD Windows 11 Pro - Wi-Fi 6 y Bluetooth 5.0, Blanco</h3>
                 <p>Precio: Q6,358</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -1399,7 +1413,7 @@
             <p>Memoria RAM: 16GB DDR4</p>
             <p>Amacenamiento: 500GB SSD</p>
             <p>Precio: Q5,247</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1421,7 +1435,7 @@
             <p>Memoria RAM: 16GB DDR4</p>
             <p>Amacenamiento: 512GB SSD</p>
             <p>Precio: Q5,325</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1443,7 +1457,7 @@
             <p>Memoria 16GB DDR4</p>
             <p>Almacenamiento SSD Patriot P300 512GB M.2</p>
             <p>Precio: Q6,457</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1465,7 +1479,7 @@
             <p>Memoria RAM: 8 DDR4</p>
             <p>Almacenamiento: 512GB SSD</p>
             <p>Precio: Q8,901</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1487,7 +1501,7 @@
             <p>Memoria RAM: 32 DDR5</p>
             <p>Amacenamiento: 1TB SSD</p>
             <p>Precio: Q7,646</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1509,7 +1523,7 @@
             <p>Memoria RAM: 16GB RAM DDR5</p>
             <p>Almacenamiento: 512GB SSD</p>
             <p>Precio: Q10,850</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1531,7 +1545,7 @@
             <p>Memoria RAM: 16GB DDR5</p>
             <p>Almacenamiento: 512GB SSD</p>
             <p>Precio: Q9,450</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1553,7 +1567,7 @@
             <p>Memoria RAM: 16GB DDR5</p>
             <p>Almacenamiento: 1TB SSD</p>
             <p>Precio: Q6,358</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1579,48 +1593,56 @@
                 <img src="https://cdn.kemik.gt/2023/12/ST1000VX005-SEAGATE-1200x1200-01.-700x700.jpg">
                 <h3>Surveillance Skyhawk Disco Duro Interno para Desktop 1TB 3.5" SATA</h3>
                 <p>Precio: Q631</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#discoduroskyhank" class="card">
                 <img src="https://cdn.kemik.gt/2023/10/ST4000VX016-1200x1200-1.-700x700.jpg">
                 <h3>Disco Duro Interno Skyhawk para Vigilancia de 4TB 3.5" SATA</h3>
                 <p>Precio: Q1,165</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#discodurowestern" class="card">
                 <img src="https://cdn.kemik.gt/2023/10/WD63PURZ-WD-1200x1200-01.-700x700.jpg">
                 <h3>Purple Disco Duro para Vigilancia de 6TB SATA3 3.5" 5400 RPM</h3>
                 <p>Precio: Q1,755</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#discodurohp" class="card">
                 <img src="https://cdn.kemik.gt/2023/07/872479-B21-1000X1000-3-768x768.-700x700.jpg">
                 <h3>HPE Midline Disco Duro Interno LFF SC 3.5″ 4TB SATA3 7200 RPM</h3>
-                <p>Precio: Q</p>
+                <p>Precio: Q3,496</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#discossdhiksemi" class="card">
                 <img src="https://cdn.kemik.gt/2024/11/E1001TB-HIKSEMI-1200x1200-01.-700x700.jpg">
                 <h3>Unidad de Estado Solido SSD E100 1024GB 2.5″ SATA</h3>
                 <p>Precio: Q1,645</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#discossdkingston" class="card">
                 <img src="https://cdn.kemik.gt/2023/04/SA400S37480G-KINGSTON-1200x1200-2-1-768x768.-700x700.jpg">
                 <h3>Unidad de Estado Solido 480GB 2.5" A400</h3>
                 <p>Precio: Q1,357</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#discom2dhiksemi" class="card">
                 <img src="https://cdn.kemik.gt/2025/05/HS-SSD-WAVE(P)1024G-1200x1200-1.-700x700.jpg">
                 <h3>Wave Pro Unidad de Estado Solido de 256GB M.2 NVMe PCIe 3.0 2280</h3>
-                <p>Precio: Q6291</p>
+                <p>Precio: Q6,291</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#discossdfury" class="card">
                 <img src="https://cdn.kemik.gt/2023/07/71XsT+ayLrL.-800x500.jpg">
                 <h3>Fury Renegade Estado Solido M.2 de 2TB PCIE 4.0 NVme con HeatSink</h3>
                 <p>Precio: Q545</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -1637,7 +1659,7 @@
             <p>Bahías de unidad admitidas: Hasta 16</p>
             <p>Límite de carga de trabajo (WRL): 180</p>
             <p>Precio: Q1,165</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1659,7 +1681,7 @@
             <p>Corriente de arranque, típica (12 V, A): 1.8 A</p>
             <p>Capacidad: 4TB</p>
             <p>Precio: Q1,165</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1681,7 +1703,7 @@
             <p>Factor de forma: 3,5 pulgadas</p>
             <p>Cámaras compatibles: Hasta 64 HD</p>
             <p>Precio: Q1,755</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1703,7 +1725,7 @@
             <p>Velocidad de rotación de la unidad (RPM): 7200</p>
             <p>Capacidad: 4 TB</p>
             <p>Precio: Q3,496</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1725,7 +1747,7 @@
             <p>Máx. velocidad de lectura: 560 MB/s</p>
             <p>TBW: 44 TB/ 88 TB/ 176 TB/ 352 TB</p>
             <p>Precio: Q1,646</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1747,7 +1769,7 @@
             <p>Velocidad de escritura: 450 MB/s</p>
             <p>Velocidad de lectura: 500 MB/s</p>
             <p>Precio: Q1,357</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1769,7 +1791,7 @@
             <p>Lectura secuencial máxima: 2280 MB/s</p>
             <p>Capacidad: 256 GB</p>
             <p>Precio: Q545</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1791,7 +1813,7 @@
             <p>Interfaz: PCI Express 4.0</p>
             <p>Compatible con NVMe: Sí</p>
             <p>Precio: Q6,291</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1815,48 +1837,56 @@
                 <img src="https://cdn.kemik.gt/2025/04/B008KSHQBU-1200x1200-01.-700x700.jpg">
                 <h3>Memoria RAM para Desktop DDR3L de 8GB a 1600Mhz UDIMM</h3>
                 <p>Precio: Q354</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#ramfuryimpact" class="card">
                 <img src="https://cdn.kemik.gt/2023/04/KF432S20IB-8-KINGSTON-FURY-1000X1000-1-768x768.-700x700.jpg">
                 <h3>FURY Impact Memoria RAM DDR4 para Laptop 8GB 3200MHz</h3>
                 <p>Precio: Q614</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#ramtimetec" class="card">
                 <img src="https://cdn.kemik.gt/2025/10/71zcVq2JO2L.-700x700.jpg">
                 <h3>Timetec Memoria RAM para Laptop DDR3L/DDR3 de 4GB a 1600MHz, 1.35V/1.5V SODIMM</h3>
                 <p>Precio: Q233</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#ramfurybeast" class="card">
                 <img src="https://cdn.kemik.gt/2024/01/KF432C16BB2A16-KINGSTON-1200x1200-01.-700x700.jpg">
                 <h3>Fury BEAST RGB Memoria RAM DDR4 16GB 3200MHz</h3>
                 <p>Precio: Q975</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#rambrocs" class="card">
                 <img src="https://cdn.kemik.gt/2023/11/BRDDR4PC832NTB-BROCS-1200x1200-01.-700x700.jpg">
                 <h3>Memoria RAM para Laptop DDR4 16GB 3200 MHz</h3>
                 <p>Precio: Q962</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#ramlenovo" class="card">
                 <img src="https://cdn.kemik.gt/2024/02/4X77A77495-LENOVO-1200x1200-01.-700x700.jpg">
                 <h3>ThinkSystem Memoria RAM DDR4 para Servidor ECC 16GB 3200MHz</h3>
                 <p>Precio: Q1,888</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#ramRedLine" class="card">
                 <img src="https://cdn.kemik.gt/2023/09/MRE4U320NNNF32G-MUSHKIN-1200x1200-01.-700x700.jpg">
                 <h3>RedLine Memoria RAM DDR4 para Desktop 32GB 3200MHz</h3>
-                <p>Precio: Q</p>
+                <p>Precio: Q1,605</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#ramvegeance" class="card">
                 <img src="https://cdn.kemik.gt/2023/09/MRE4U320NNNF32G-MUSHKIN-1200x1200-01.-700x700.jpg">
                 <h3>Vengeance Performance SODIMM Memoria 32GB (2x16GB) DDR4 3200MHz CL22 sin búfer para 8ª generación o más reciente Intel Core™ i7, y AMD Ryzen 4000 Series 32 GB</h3>
                 <p>Precio: Q3,079</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -1873,7 +1903,7 @@
             <p>Instalación sencilla; no se requieren conocimientos informáticos. Guías prácticas disponibles en Crucial</p>
             <p>Capacidad: 8GB a 1600Mhz UDIMM</p>
             <p>Precio: Q354</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1895,7 +1925,7 @@
             <p>Frecuencia: 3200 MHz</p>
             <p>Latencia: CL20</p>
             <p>Precio: Q</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1917,7 +1947,7 @@
             <p>PC3L-12800 / PC3-12800 204 pines</p>
             <p>sin búfer sin ECC 1.35V / 1.5V CL11 Rango dual 2Rx8 basado 256x8</p>
             <p>Precio: Q233</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1939,7 +1969,7 @@
             <p>Tipo de memoria interna: DDR4</p>
             <p>Velocidad de memoria del reloj: 3200MT/s</p>
             <p>Precio: Q975</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1961,7 +1991,7 @@
             <p>Capacidad: 16gb</p>
             <p>Voltaje: 1.2V – 1.35V</p>
             <p>Precio: Q962</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -1983,7 +2013,7 @@
             <p>Componente para: PC/servidor</p>
             <p>Voltaje de memoria: 1.2 V</p>
             <p>Precio: Q1,630</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2005,7 +2035,7 @@
             <p>Tamaño del módulo: 32 GB</p>
             <p>Frecuencia: 3200</p>
             <p>Precio: Q1,605</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2027,7 +2057,7 @@
             <p>Overclocking automático con portátiles compatibles (no requiere configuración BIOS)</p>
             <p>3200 MHz</p>
             <p>Precio: Q3,079</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2052,48 +2082,56 @@
                 <img src="https://cdn.kemik.gt/2024/10/100-100000931BOX-AMD-1200x1200-01.-700x700.jpg">
                 <h3>Procesador Ryzen 5 8500G 3.5GHz 6 Núcleos AM5</h3>
                 <p>Precio: Q2,007</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#inteli5" class="card">
                 <img src="https://cdn.kemik.gt/2024/01/BX8071514400-INTEL-1200x1200-01.-700x700.jpg">
                 <h3>Procesador Core i5-14400 14th Gen LGA 1700 5 GHz</h3>
                 <p>Precio: Q1,912</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#ryzen7" class="card">
                 <img src="https://cdn.kemik.gt/2024/12/100-100001236BOX-AMD-1200x1200-01.-700x700.jpg">
                 <h3>Procesador Ryzen 7 8700G 4.2GHz 8 Núcleos AM5</h3>
                 <p>Precio: Q2,899</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#intel5" class="card">
                 <img src="https://cdn.kemik.gt/2025/02/BX80768225-intel-1200x1200-1.-700x700.jpg">
                 <h3>Procesador Core Ultra 5 225 Series 2 LGA 1851 4.9 GHz</h3>
                 <p>Precio: Q2,950</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#ryzen3" class="card">
                 <img src="https://cdn.kemik.gt/2026/01/10097-1200x1200-5.-700x700.jpg">
                 <h3>Procesador Ryzen 3 4100 3.8 GHz 4 Núcleos AM4</h3>
                 <p>Precio: Q643</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#intel5ultra" class="card">
                 <img src="https://cdn.kemik.gt/2024/12/BX80768245K-Intel-1200x1200-01.-700x700.jpg">
                 <h3>Procesador Core Ultra 5-245K 4.2GHz Series 2 LGA 1851</h3>
                 <p>Precio: Q3,123</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#ryzen9" class="card">
                 <img src="https://cdn.kemik.gt/2024/09/51OEiWrUtqL.-775x500.jpg">
                 <h3>Procesador de Escritorio Desbloqueado Ryzen 9 7900X, 12 Núcleos y 24 Hilos, AM5</h3>
                 <p>Precio: Q6,329</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#intel7" class="card">
                 <img src="https://cdn.kemik.gt/2024/12/BX80768265KF-Intel-1200x1200-01.-700x700.jpg">
                 <h3>Procesador Core Ultra 7-265KF 3.9GHz Series 2 LGA 1851</h3>
                 <p>Precio: Q3,949</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -2110,7 +2148,7 @@
             <p>Reloj base de 3,5 GHz, reloj de aumento máximo de 5 GHz</p>
             <p>Gráficos integrados AMD Radeon 740M, procesador desbloqueado</p>
             <p>Precio: Q2,007</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2132,7 +2170,7 @@
             <p>Frecuencia Turbo Boost máxima de 5 GHz.</p>
             <p>Gráficos Intel UHD 730 integrados</p>
             <p>Precio: Q1,912</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2154,7 +2192,7 @@
             <p>Velocidad base de reloj de 4.2 GHz</p>
             <p>Memoria DDR5-5200</p>
             <p>Precio: Q2,899</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2176,6 +2214,7 @@
             <p>Zócalo: LGA 1851</p>
             <p>Configuración Máxima de CPU: 1S</p>
             <p>Precio: Q2,950</p>
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2197,7 +2236,7 @@
             <p>Zócalo de CPU: AM4</p>
             <p>Configuración máxima de CPU: 1S</p>
             <p>Precio: Q643</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2219,7 +2258,7 @@
             <p>Zócalo: LGA 1851</p>
             <p>Configuración Máxima de CPU: 1S</p>
             <p>Precio: Q3,123</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2241,7 +2280,7 @@
             <p>El núcleo del procesador Dodeca-core (12 Core) permite realizar múltiples tareas con gran fiabilidad y velocidad de procesamiento rápida</p>
             <p>La memoria caché L2 de 12 MB más 64 MB L3 proporciona una excelente tasa de aciertos en tiempo de acceso corto, lo que permite un rendimiento mejorado del sistema</p>
             <p>Precio: Q6,329</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2263,7 +2302,7 @@
             <p>Zócalo: LGA 1851</p>
             <p>Configuración Máxima de CPU: 1S</p>
             <p>Precio: Q</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2287,30 +2326,35 @@
                 <img src="https://cdn.kemik.gt/2023/07/PRIME%20A520M-K-ASUS-1200x1200-01.-700x700.jpg">
                 <h3>PRIME A520M-K Motherboard AMD AM4 2xDDR4 MicroATX</h3>
                 <p>Precio: Q790</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#msiproam4" class="card">
                 <img src="https://cdn.kemik.gt/2024/12/824142227213-MSI-1200x1200-01.-700x700.jpg">
                 <h3>B550M PRO-VDH Motherboard AM4 4xDDR4 MicroATX</h3>
                 <p>Precio: Q850</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#gigabyteam5" class="card">
                 <img src="https://cdn.kemik.gt/2026/01/115691200x12001.-700x700.jpg">
                 <h3>B650M H Motherboard Gaming AMD AM5, 2xDDR5 MicroATX</h3>
                 <p>Precio: Q828</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
               <a href="#asush510m" class="card">
                 <img src="https://cdn.kemik.gt/2026/01/CP81841200x12001.-700x700.jpg">
                 <h3>PRIME H510M-F R3.0 Motherboard LGA 1200, 2xDDR4 MicroATX</h3>
                 <p>Precio: Q595</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#artek" class="card">
                 <img src="https://cdn.kemik.gt/2026/01/CP81441200x12001.-700x700.jpg">
                 <h3>AK-H110M EG VS Motherboard Intel LGA1151, 2xDDR4 MicroATX</h3>
                 <p>Precio: Q431</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
              <a href="#asrock" class="card">
@@ -2323,12 +2367,14 @@
                 <img src="https://cdn.kemik.gt/2026/01/CP81461200x12001.-700x700.jpg">
                 <h3>PRO B840M-B Motherboard Gaming AMD AM5, 2xDDR5 MicroATX</h3>
                 <p>Precio: Q902</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
             <a href="#asusrogf" class="card">
                 <img src="https://cdn.kemik.gt/2026/01/MB000ROG201200x12001.-700x700.jpg">
                 <h3>ROG STRIX B860-F GAMING WIFI Motherboard Gaming Intel LGA1851, 4xDDR5 ATX</h3>
                 <p>Precio: Q3,052</p>
+                <label class="boton-carrito">Agregar al carrito</label>
             </a>
 
         </div>
@@ -2345,7 +2391,7 @@
             <p>Conjunto de chips: AMD A520</p>
             <p>Soporte máximo de memoria: 64GB</p>
             <p>Precio: Q790</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2367,7 +2413,7 @@
             <p>Conjunto de chips: AMD B550</p>
             <p>Almacenamiento: Admite 1x ranura M.2 Gen4 con velocidad de hasta 64 Gbps.</p>
             <p>Precio: Q850</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2390,7 +2436,7 @@
             <p>Socket: AMD AM5</p>
             <p>Ranuras: 2 x zócalos DIMM DDR5.</p>
             <p>Precio: Q828</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2412,7 +2458,7 @@
             <p>Socket: LGA1200</p>
             <p>Ranuras: 2 x DIMM</p>
             <p>Precio: Q595</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2434,7 +2480,7 @@
             <p>Socket: Intel 1151</p>
             <p>Ranuras: 2 x DDR4 DIMM</p>
             <p>Precio: Q431</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2456,7 +2502,7 @@
             <p>20+1+2+1+1 Fase de potencia, 110 A SPS para VCore</p>
             <p>4 DIMM DDR5 compatibles con canal dual, hasta 9200+ (OC)</p>
             <p>Precio: Q4,788</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2478,7 +2524,7 @@
             <p>Socket: AM5</p>
             <p>Ranuras: 2x DDR5 UDIMM (Pestillos de un solo lado).</p>
             <p>Precio: Q902</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
@@ -2500,7 +2546,7 @@
             <p>Compatibilidad: Procesadores Intel® Core™ Ultra (Serie 2)</p>
             <p>Chipset: Intel® B860</p>
             <p>Precio: Q3,052</p>
-            
+            <label class="boton-carrito">Agregar al carrito</label>
         </div>
 
         <div class="imagenes">
